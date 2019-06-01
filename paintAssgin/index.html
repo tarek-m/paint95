@@ -4,66 +4,22 @@
 <head>
 
     <link rel="stylesheet" href="./css/main.css">
-
-
-
 </head>
 
 <body>
-    <input type="number" id="inputheight" placeholder="height" min="0" max="800">
-    <input type="number" id="inputwidth" placeholder="width" min="0" max="800">
-    <input type="submit" id="sizeSubmit" onclick="submittest();">
-    <input type="number" id="sizetwo" placeholder="border">
-    <input type="submit" id="bordersubmit" onclick="bordersubmit();">
 
-    <table>
-        <tr>
-            <td class="colors" value="red" id="red" onclick="drawtraingle();"> </td>
-            <td class="colors" id="blue" onclick="drawTriangle();"></td>
-        </tr>
-        <tr>
+    <div class="canvasContainer">
+        <div id="canvas">
 
-
-        </tr>
-    </table>
-    <button type="button" aria-placeholder="red" onclick="changeRed()"></button>
-    <input id="colorPick" type="button" value="red"><br>
-    <div id="canvas"></div>
-
-    <!-- <div class="box ">
-
-
-        <div class="box inner " id="Sidemenu ">
-            <input type="color" id="colorPick"> -->
-    <!-- 
-            <table class="table">
-                <tr>
-                    <td class="one ">1 </td>
-                    <td class="two ">2</td>
-
-                </tr>
-                <tr>
-                    <td class="three ">3 </td>
-                    <td class="four ">4 </td>
-
-                </tr>
-                <tr>
-                    <td class="five ">5 </td>
-                    <td class="six ">6 </td>
-
-                </tr>
-                <tr>
-                    <td class="seven ">7 </td> 
-                   
-
-                </tr>
-            </table> -->
-    <!-- </div>
-
-    <div class="box inner " id="sideBox ">
-
+        </div>
     </div>
-    </div> -->
+    <div class="under">
+        <input type="number" id="inputheight" placeholder="height" min="0" max="800">
+        <input type="number" id="inputwidth" placeholder="width" min="0" max="800">
+        <input type="submit" id="sizeSubmit" onclick="submittest();">
+        <!-- <input type="reset" id="sizeSubmit" onclick="eraseall();">   -->
+        <input id="colorPick" type="color"><br>
+    </div>
     <script src="js/new.js "></script>
 </body>
 
